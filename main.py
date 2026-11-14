@@ -5,7 +5,9 @@ The image is a laughing little girl in a yellow dress offering one giant
 sunflower straight toward the viewer, with a small paper tag tied to the
 stem that reads "for the judge", at golden hour in a garden. This program
 copies the bundled image.jpg to the output path byte for byte, so repeated
-runs always write identical bytes.
+runs always write identical bytes. The copy is the whole entry: no pixels
+are re-encoded, no metadata is touched, and the output hash never changes
+between runs.
 
 Pure standard library only. No network.
 """
